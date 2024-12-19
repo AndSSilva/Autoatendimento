@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoatendimento</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Layout -->
+</head>
+<body>
+    <div class="container">
+        <h1>Autoatendimento</h1>
+        <label for="cpf">Digite seu CPF:</label>
+        <input type="text" id="cpf" placeholder="000.000.000-00" maxlength="14">
+        <small id="cpfError" style="color: red; display: none;">CPF inválido.</small>
+        <button id="buscarBtn" onclick="buscarCadastro()" disabled>Buscar Cadastro</button>
+
+        <div class="result" id="result" style="display: none;">
+            <p><strong>Nome:</strong> <span id="nome"></span></p>
+            <p><strong>Data de Nascimento:</strong> <span id="dataNascimento"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Funções -->
+</body>
+</html>
